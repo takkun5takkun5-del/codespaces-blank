@@ -1,0 +1,19 @@
+{
+    "name": "Custom Desktop Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        // デスクトップ環境（VNC）を自動で有効にする設定
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // 友達が使うときに便利なおすすめ拡張機能（あればここに追加できます）
+            ]
+        }
+    }
+}
